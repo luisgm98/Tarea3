@@ -144,7 +144,10 @@ plt.xlabel('Valores de X')
 ax.scatter3D(x,y,z)
 ```
 Obteniendo como resultado las siguientes imagenes:
+
 ![alt text](https://github.com/luisgm98/Tarea3/blob/master/denx.png)
+
 ![alt text](https://github.com/luisgm98/Tarea3/blob/master/deny.png)
+
 ![alt text](https://github.com/luisgm98/Tarea3/blob/master/densidadconjuntagrafica.png)
 
