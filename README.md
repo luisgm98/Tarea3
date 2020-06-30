@@ -86,3 +86,41 @@ Para esta parte, sabemos que que la función de densidad conjunta al asumir inde
 
 Por lo tanto, al sustituir las funciones por las funciones Gaussianas evaluadas en los parametros de X y Y encontrados anteriormente, obtenemos la siguiente función de densidad conjunta:
 ![alt text](https://github.com/luisgm98/Tarea3/blob/master/densidadconjunta.PNG)
+
+##  Hallar los valores de correlación, covarianza y coeficiente de correlación (Pearson) para los datos y explicar su significado.
+
+Para esta sección, utilizamos los datos obtenidos del archivo "xyp" y se procedió a crear las siguientes funciones, las cuales se encargan de calcular la correlación, covarianza y el coeficiente de correlación.
+```
+"Para la correlación creamos la siguiente función"
+def correlacion(xyp):
+    suma = 0
+    for i in range(0,231):
+        mult = 1
+        for e in range(0,3):
+            mult = mult*xyp.iloc[i][e]  
+        suma += mult
+    return suma
+  
+"Para la covarianza creamos la siguiente función"
+def covarianza(xyp):
+    suma2 = 0
+    for i in range(0,231):
+        suma2 += (xyp.iloc[i][0]-param[0])*(xyp.iloc[i][1]-param2[0])*xyp.iloc[i][2]        
+    return suma2
+
+"Creamos la función coeficientePearson"
+def coeficientepearson(xyp):
+    suma3 = 0
+    for i in range(0,231):
+        suma3 += (xyp.iloc[i][0]-param[0])*(xyp.iloc[i][1]-param2[0])/(param[1]*param2[1])*xyp.iloc[i][2]
+    return suma3
+```
+Lo anterior nos da como resultado los siguientes valores:
+- Correlacion: 149.54281000000012. Este valor nos indica el grado en que dos o más variables se encuentran asociadas linealmente, por lo tanto, este valor obtenido nos indica que X y Y estan altamente asociadas linealmente.
+- Covarinza: 0.06669157081830895. El valor de la covarianza nos indica si las variables son independientes o no estan correlacionadas, esto en caso de que sea igual a cero. En este ejemplo podemos ver que la covarianza se puede aproximar como 0, lo cual nos indica que X y Y son variables independientes, lo cual coincide con lo asumido en el segundo enunciado.
+- Coeficiente de pearson: 0.0033537723017496544. Este valor, al igual que la covarianza, puede ser aproximado como 0, lo cual nos indica que no existe ninguna asociación entre la variable X y Y.
+
+##  Graficar las funciones de densidad marginales (2D), la función de densidad conjunta (3D).
+
+
+
