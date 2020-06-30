@@ -80,4 +80,9 @@ Con lo anterior se obtuvieron las siguientes gráficas:
 
 ##  Asumir independencia de X y Y. Analíticamente, ¿cuál es entonces la expresión de la función de densidad conjunta que modela los datos?
 
-Para esta parte, sabemos que 
+Para esta parte, sabemos que que la función de densidad conjunta al asumir independencia corresponde a la siguiente: 
+
+![alt text](https://github.com/luisgm98/Tarea3/blob/master/densidadconj.PNG)
+
+Por lo tanto, al sustituir las funciones por las funciones Gaussianas evaluadas en los parametros de X y Y encontrados anteriormente, obtenemos la siguiente función de densidad conjunta:
+![alt text](https://github.com/luisgm98/Tarea3/blob/master/densidadconjunta.PNG)
