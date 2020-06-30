@@ -11,4 +11,5 @@ from scipy.optimize import curve_fit
 
 Para la solución de esta tarea se comenzó leyendo los archivos "xy.csv" y "xyp.csv". Para esto se 
 
-https://github.com/luisgm98/Tarea3/blob/master/PMFx.png
+![alt text](https://github.com/luisgm98/Tarea3/blob/master/PMFx.png)
+
