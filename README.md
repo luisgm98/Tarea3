@@ -73,6 +73,8 @@ plt.plot(my,gauss(my,param2[0],param2[1]))
 
 Con lo anterior se obtuvieron las siguientes gráficas:
 
+![alt text](https://github.com/luisgm98/Tarea3/blob/master/AjusteX.png)
+
 
 ##  Asumir independencia de X y Y. Analíticamente, ¿cuál es entonces la expresión de la función de densidad conjunta que modela los datos?
 
