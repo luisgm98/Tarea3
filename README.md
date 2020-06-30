@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 ```
 
+## A partir de los datos, encontrar la mejor curva de ajuste (modelo probabilístico) para las funciones de densidad marginales de X y Y
 
 Para la solución de esta tarea se comenzó leyendo los archivos "xy.csv" y "xyp.csv" con ayuda de la libreria Pandas. Posterior a esto, se calcularon los valores marginales tanto de X, como de Y; para esto se procedió a crear dos funciones que recorrieran los datos por fila y por culumna, y que además realizaran una sumatoria de cada una, estos valores ya correspondian a los valores marginales de cada X y Y. Estas funciones también se encargaban de almacenar estos valores en las listas "mx" y "my". Ambas funciones se presentan a continuación.
 
@@ -51,3 +52,27 @@ Lo anterior nos da como resultado los siguientes parametros:
 - μx=9,90484384
 - σy=6,02693794
 - μy=15,07946091
+
+Una vez encontrados dichos parámetros se procedió a gráficar la curva de ajuste para X y Y utilizando el siguiente código:
+
+```
+plt.figure(3)
+plt.plot(mx,PMFx)
+plt.title("Distribución en X")
+plt.ylabel('Densidad marginal en X')
+plt.xlabel('Valores de X')
+plt.plot(mx,gauss(mx,param[0],param[1]))
+
+plt.figure(4)
+plt.plot(my,PMFy)
+plt.title("Distribución en Y")
+plt.ylabel('Densidad marginal en Y')
+plt.xlabel('Valores de Y')
+plt.plot(my,gauss(my,param2[0],param2[1]))
+```
+
+Con lo anterior se obtuvieron las siguientes gráficas:
+
+
+##  Asumir independencia de X y Y. Analíticamente, ¿cuál es entonces la expresión de la función de densidad conjunta que modela los datos?
+
