@@ -75,6 +75,8 @@ Con lo anterior se obtuvieron las siguientes gráficas:
 
 ![alt text](https://github.com/luisgm98/Tarea3/blob/master/AjusteX.png)
 
+![alt text](https://github.com/luisgm98/Tarea3/blob/master/AjusteY.png)
+
 
 ##  Asumir independencia de X y Y. Analíticamente, ¿cuál es entonces la expresión de la función de densidad conjunta que modela los datos?
 
