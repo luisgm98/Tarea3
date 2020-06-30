@@ -121,7 +121,29 @@ Lo anterior nos da como resultado los siguientes valores:
 - Coeficiente de pearson: 0.0033537723017496544. Este valor, al igual que la covarianza, puede ser aproximado como 0, lo cual nos indica que no existe ninguna asociación entre la variable X y Y.
 
 ##  Graficar las funciones de densidad marginales (2D), la función de densidad conjunta (3D).
+Para esta última parte, se procedió a calcular las gráficas de las funciones marginales y la de densidad conjunta utilizando el siguiente codigo:
+```
+plt.figure(5)
+plt.title("Función de densidad marginal de X")
+plt.ylabel('Densidad marginal en X')
+plt.xlabel('Valores de X')
+plt.plot(mx,gauss(mx,param[0],param[1]))
 
+plt.figure(6)
+plt.title("Función de densidad marginal de Y")
+plt.ylabel('Densidad marginal en Y')
+plt.xlabel('Valores de Y')
+plt.plot(my,gauss(my,param2[0],param2[1]))
+
+       
+fig = plt.figure(7)
+ax = plt.axes(projection="3d")
+plt.title("Función de densidad conjunta")
+plt.ylabel('Valores de Y')
+plt.xlabel('Valores de X')
+ax.scatter3D(x,y,z)
+```
+Obteniendo como resultado las siguientes imagenes:
 ![alt text](https://github.com/luisgm98/Tarea3/blob/master/denx.png)
 ![alt text](https://github.com/luisgm98/Tarea3/blob/master/deny.png)
 ![alt text](https://github.com/luisgm98/Tarea3/blob/master/densidadconjuntagrafica.png)
