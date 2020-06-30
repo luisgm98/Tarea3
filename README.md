@@ -46,7 +46,7 @@ param,_ = curve_fit(gauss,mx,PMFx,p0=[0,1])
 param2,_ = curve_fit(gauss,my,PMFy,p0=[0,1])
 ```
 
-Lo anterior nos da como resultado los siguientes parametros:
+Lo anterior nos da como resultado los siguientes parametros:__
 σx=3,29944318
 μx=9,90484384
 σy=6,02693794
