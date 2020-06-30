@@ -122,5 +122,7 @@ Lo anterior nos da como resultado los siguientes valores:
 
 ##  Graficar las funciones de densidad marginales (2D), la función de densidad conjunta (3D).
 
-
+![alt text](https://github.com/luisgm98/Tarea3/blob/master/densx.png)
+![alt text](https://github.com/luisgm98/Tarea3/blob/master/densy.png)
+![alt text](https://github.com/luisgm98/Tarea3/blob/master/densidadconjuntagrafica.png)
 
