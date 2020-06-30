@@ -1,4 +1,4 @@
-#Tarea3
+# Tarea3
 Antes de comenzar la explicación de este trabajo realizado en lenguaje de programación Python, se mostrarán las librerias que se importaron.
 ```
 from mpl_toolkits import mplot3d
